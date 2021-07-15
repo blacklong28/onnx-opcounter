@@ -14,4 +14,4 @@ def main():
     print('Number of parameters in the model: {}'.format(calculate_params(model)))
 
     if args.calculate_macs:
-        print('Number of MACs in the model: {}'.format(calculate_macs(model)))
+        print('Number of GFLOPs in the model: {}'.format(calculate_macs(model)/1000000000))
